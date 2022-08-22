@@ -26,7 +26,7 @@ public class Login implements Task{
                 //STEP ONE
                 Enter.theValue("Daniel").into(ChoucairLoginPage.FRIST_NAME),
                 Enter.theValue("Zuleta").into(ChoucairLoginPage.LAST_NAME),
-                Enter.theValue("Danielzuleta40@pruebados.com").into(ChoucairLoginPage.EMAIL),
+                Enter.theValue("Danielzuleta236@pruebados.com").into(ChoucairLoginPage.EMAIL),
                 SelectFromOptions.byVisibleText("February").from(ChoucairLoginPage.BIRTH_MONTH),
                 SelectFromOptions.byVisibleText("20").from(ChoucairLoginPage.BIRTH_DAY),
                 SelectFromOptions.byVisibleText("2000").from(ChoucairLoginPage.BIRTH_YEAR),
@@ -35,8 +35,10 @@ public class Login implements Task{
                 Click.on(ChoucairLoginPage.NEXT_PAGE_TWO),
 
 
+
                 //STEP TWO
-                Enter.theValue("29902020").into(ChoucairLoginPageTwo.CODE_POSTAL),
+                Enter.theValue("Barranquilla").into(ChoucairLoginPageTwo.CITY),
+                Enter.theValue("29902").into(ChoucairLoginPageTwo.CODE_POSTAL),
                 Click.on(ChoucairLoginPageTwo.COUNTRY),
                 Click.on(ChoucairLoginPageTwo.COUNTRY_LABEL),
                 Click.on(ChoucairLoginPageTwo.NEXT_BUTTONPAGE_THREE),
@@ -67,8 +69,11 @@ public class Login implements Task{
                 Enter.theValue(password).into(ChoucairLoginPageFour.PASSWORD),
                 Enter.theValue(password).into(ChoucairLoginPageFour.PASSWORD_CONFIRM),
                 Click.on(ChoucairLoginPageFour.CHECK_MARK_TOU),
-                Click.on(ChoucairLoginPageFour.CHECK_MARK_PSP)
-                //Click.on(ChoucairLoginPagThree.NEXT_LAST_STEP)
+                Click.on(ChoucairLoginPageFour.CHECK_MARK_PSP),
+                Click.on(ChoucairLoginPagThree.NEXT_LAST_STEP)
+
+                //LOGIN
+
 
 
                 );
