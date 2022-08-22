@@ -26,7 +26,7 @@ public class Login implements Task{
                 //STEP ONE
                 Enter.theValue("Daniel").into(ChoucairLoginPage.FRIST_NAME),
                 Enter.theValue("Zuleta").into(ChoucairLoginPage.LAST_NAME),
-                Enter.theValue("Danielzuleta236@pruebados.com").into(ChoucairLoginPage.EMAIL),
+                Enter.theValue("Danielzuleta7485@pruebados.com").into(ChoucairLoginPage.EMAIL),
                 SelectFromOptions.byVisibleText("February").from(ChoucairLoginPage.BIRTH_MONTH),
                 SelectFromOptions.byVisibleText("20").from(ChoucairLoginPage.BIRTH_DAY),
                 SelectFromOptions.byVisibleText("2000").from(ChoucairLoginPage.BIRTH_YEAR),
